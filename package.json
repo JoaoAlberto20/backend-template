@@ -4,8 +4,10 @@
   "version": "0.0.1",
   "description": "Template for back-end applications.",
   "license": "UNLICENSED",
-  "main": "build/src/main.js",
+  "main": "build/src/server.js",
   "scripts": {
+    "start": "node build/server.js",
+    "start:dev": "tsx watch src/server.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" ",
     "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "vitest run",
@@ -24,6 +26,8 @@
     "@vitest/ui": "^0.29.8",
     "eslint": "^8.37.0",
     "prisma": "^4.12.0",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.6",
     "typescript": "^5.0.2",
     "vite-tsconfig-paths": "^4.0.7",
     "vitest": "^0.29.8"
