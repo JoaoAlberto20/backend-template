@@ -5,7 +5,10 @@
   "description": "Template for back-end applications.",
   "license": "UNLICENSED",
   "main": "build/src/main.js",
-  "scripts": {},
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "prisma": "^4.12.0",
