@@ -6,6 +6,8 @@
   "license": "UNLICENSED",
   "main": "build/src/main.js",
   "scripts": {
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" ",
+    "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
