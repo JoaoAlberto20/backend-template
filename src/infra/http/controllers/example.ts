@@ -6,8 +6,11 @@ export async function exampleController(
   request: FastifyRequest,
   reply: FastifyReply,
 ) {
-  const exampleUseCase = makeExampleUseCase();
-  const number = await exampleUseCase.execute({ number: 5 });
+  const { number } = request.body as { number: number };
 
-  return reply.status(200).send({ number });
+  const exampleUseCase = makeExampleUseCase();
+
+  const result = await exampleUseCase.execute({ number });
+
+  return reply.status(200).send({ number: result });
 }

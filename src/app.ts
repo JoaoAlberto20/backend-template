@@ -1,9 +1,9 @@
 import fastify from 'fastify';
 
+import { env } from '@config/env';
 import fastifyCookie from '@fastify/cookie';
 import fastifyJwt from '@fastify/jwt';
-
-import { env } from './config/env';
+import { exampleRoutes } from '@infra/http/routes/example.routes';
 
 export const app = fastify();
 
@@ -19,3 +19,5 @@ app.register(fastifyJwt, {
 });
 
 app.register(fastifyCookie);
+
+app.register(exampleRoutes);
