@@ -5,6 +5,8 @@
   "description": "Template for back-end applications.",
   "license": "UNLICENSED",
   "main": "build/src/main.js",
-  "scripts": {
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "^5.0.2"
   }
 }
