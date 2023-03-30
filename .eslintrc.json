@@ -1,3 +1,6 @@
 {
-  "extends": ["@joaoalbertosv/eslint-config/node"]
+  "extends": ["@joaoalbertosv/eslint-config/node"],
+  "rules": {
+    "no-console": "off"
+  }
 }
