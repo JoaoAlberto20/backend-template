@@ -1,0 +1,10 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Template for back-end applications.",
+  "license": "UNLICENSED",
+  "main": "build/src/main.js",
+  "scripts": {
+  }
+}
