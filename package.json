@@ -16,7 +16,9 @@
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
     "@fastify/jwt": "^6.7.1",
-    "fastify": "^4.15.0"
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@joaoalbertosv/eslint-config": "^1.10.0",
